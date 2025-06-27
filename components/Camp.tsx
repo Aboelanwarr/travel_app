@@ -15,7 +15,7 @@ const CampSite = ({
 }: IProps) => {
   return (
     <div
-      className={`h-full w-full min-w-[350px] ${backgroundImage} sm:min-w-[690px] md:min-w-[750px] lg:min-w-[1100px] bg-bg-img-1 bg-cover bg-no-repeat sm:rounded-5xl 2xl:rounded-5xl`}    
+      className={`h-full w-full min-w-[350px] ${backgroundImage} sm:min-w-[690px] md:min-w-[750px] lg:min-w-[1100px] bg-bg-img-1 bg-cover bg-no-repeat sm:rounded-5xl 2xl:rounded-5xl`}
     >
       <div className="flex h-full flex-col items-start justify-between p-6 sm:px-20 sm:py-10">
         <div className="flexCenter gap-4">
@@ -46,7 +46,7 @@ const CampSite = ({
     </div>
   );
 };
-const Camp = ({}: IProps) => {
+const Camp = ({}) => {
   return (
     <section className="max-container padding-container relative flex flex-col py-10 lg:py-20">
       <div className="hide-scrollbar flex h-[340px] w-full items-start justify-start gap-8 overflow-x-auto md:h-[400px] lg:h-[600px]">
@@ -74,7 +74,13 @@ const Camp = ({}: IProps) => {
             That's why we are here for those of you who want to start an
             adventure
           </p>
-          <Image src="/quote.svg" alt="camp-2" width={186} height={219} className="camp-quote" />
+          <Image
+            src="/quote.svg"
+            alt="camp-2"
+            width={186}
+            height={219}
+            className="camp-quote"
+          />
         </div>
       </div>
     </section>
